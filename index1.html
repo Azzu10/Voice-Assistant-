@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>GIF Background Example</title>
+    <style>
+        body {
+            background-color: black; /* Add black background color */
+            background-image: url('jarvis index1.gif');
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            color: white; /* Set text color to white for visibility */
+            text-align: center; /* Center the text */
+            animation: slow-motion 10s infinite; /* Adjust the duration for slower motion */
+        }
+
+        @keyframes slow-motion {
+            0% { background-position: center; }
+            100% { background-position: center; }
+        }
+
+        .message {
+            margin-bottom: 20px;
+            font-size: 24px; /* Adjust font size as needed */
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #00bcd4; /* Cyan color */
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0097a7; /* Darker cyan on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message">
+        I'm Baemax.
+    </div>
+
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='index2.html'">Click Me</button>
+    </div>
+
+    <py-script src="message.py"></py-script>
+</body>
+
+</html>
